@@ -1,37 +1,57 @@
 body {
-    background-color: #f5f8fa;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f8fa;
   }
   
   h1 {
-    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px #aaa;
+  }
+  
+  h3 {
+    margin-top: 30px;
+    text-align: left;
   }
   
   input[type="text"],
   input[type="number"],
   select {
-    margin: 10px 0;
-    padding: 5px;
-    width: 250px;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 5px;
   }
   
   label {
-    margin: 0 10px 0 5px;
+    margin-right: 20px;
+    font-size: 16px;
   }
   
   button {
-    margin-top: 20px;
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
   }
   
   #totalScore, #totalAttempts {
     font-weight: bold;
     font-size: 20px;
+    margin-top: 20px;
   }
   
   img {
     vertical-align: middle;
+    margin-right: 8px;
   }
