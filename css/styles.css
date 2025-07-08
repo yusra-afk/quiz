@@ -1,36 +1,51 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f5f8fa;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #c2b6ff;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .quiz-container {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    padding: 30px 40px;
+    max-width: 800px;
+    width: 100%;
   }
   
   h1 {
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px #aaa;
+    font-family: 'Fredoka One', cursive;
+    font-size: 36px;
+    color: #4b3f72;
+    text-align: center;
+    margin-bottom: 30px;
   }
   
   h3 {
-    margin-top: 30px;
-    text-align: left;
+    font-weight: bold;
+    margin-top: 25px;
+    color: #333;
   }
   
   input[type="text"],
   input[type="number"],
   select {
     display: block;
-    margin-top: 8px;
-    margin-bottom: 20px;
-    padding: 8px;
     width: 100%;
-    max-width: 400px;
-    border-radius: 5px;
+    max-width: 500px;
+    margin-top: 8px;
+    padding: 10px;
+    border-radius: 10px;
     border: 1px solid #ccc;
     font-size: 16px;
   }
   
   input[type="checkbox"],
   input[type="radio"] {
-    margin-right: 5px;
+    margin-right: 6px;
   }
   
   label {
@@ -38,17 +53,33 @@ body {
     font-size: 16px;
   }
   
-  button {
+  button.submit-btn {
+    background: #ffc857;
+    color: #000;
+    font-weight: bold;
     font-size: 18px;
-    padding: 10px 24px;
     border: none;
-    border-radius: 6px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
   }
   
-  #totalScore, #totalAttempts {
+  button.submit-btn:hover {
+    background: #f3b04e;
+  }
+  
+  #totalScore,
+  #totalAttempts {
     font-weight: bold;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 15px;
+  }
+  
+  .text-success, .text-danger {
+    font-size: 16px;
+    margin-top: 8px;
   }
   
   img {
