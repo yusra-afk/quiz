@@ -86,3 +86,10 @@ body {
     vertical-align: middle;
     margin-right: 8px;
   }
+
+  .icon {
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+  }

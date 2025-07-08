@@ -25,18 +25,18 @@ function isFormValid() {
 }
 
 function rightAnswer(index) {
-  document.querySelector(`#q${index}Feedback`).innerHTML = "✅ Correct!";
-  document.querySelector(`#q${index}Feedback`).className = "text-success";
-  document.querySelector(`#markImg${index}`).innerHTML = "<img src='img/check.png' width='20'>";
-  score += 10;
-}
-
-function wrongAnswer(index) {
-  document.querySelector(`#q${index}Feedback`).innerHTML = "❌ Incorrect!";
-  document.querySelector(`#q${index}Feedback`).className = "text-danger";
-  document.querySelector(`#markImg${index}`).innerHTML = "<img src='img/x.png' width='20'>";
-}
-
+    document.querySelector(`#q${index}Feedback`).innerHTML =
+      "<img src='img/checkmark.png' class='icon'> Correct!";
+    document.querySelector(`#q${index}Feedback`).className = "text-success";
+    score += 10;
+  }
+  
+  function wrongAnswer(index) {
+    document.querySelector(`#q${index}Feedback`).innerHTML =
+      "<img src='img/xmark.png' class='icon'> Incorrect!";
+    document.querySelector(`#q${index}Feedback`).className = "text-danger";
+  }
+  
 function gradeQuiz() {
   if (!isFormValid()) return;
   score = 0;
